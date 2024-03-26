@@ -12,7 +12,7 @@ fish_data_cat <- fish_data %>%
 
 # Keep the fish with a scalelength of more than 1 mm
 fish_data_lgth_1mm_plus <- fish_data %>% 
-  filter(scalelength > 1)
+  filter(scalelength > 0.5)
 
 # load package that includes ggplot
 library(tidyverse)
