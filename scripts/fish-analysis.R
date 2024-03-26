@@ -23,5 +23,11 @@ ggplot(data = fish_data_lgth_1mm_plus, mapping = aes(x = length, y = scalelength
   geom_point()
 
 # Plot histogram of scale length by categorical size
-ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
-  geom_histogram()
+plot_scalelength <- ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram(bins = 80)
+
+plot_scalelength
+
+# export plot histogram
+ggsave("scale_hist_by_length.png", plot_scalelength, width = 15, height = 10)
+
