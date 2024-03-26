@@ -13,3 +13,11 @@ fish_data_cat <- fish_data %>%
 # Keep the fish with a scalelength of more than 1 mm
 fish_data_lgth_1mm_plus <- fish_data %>% 
   filter(scalelength > 1)
+
+# load package that includes ggplot
+library(tidyverse)
+
+# the relationship between the length of each fish’s body 
+# and the size of its scale across the different lakes sampled in these data
+ggplot(data = fish_data_lgth_1mm_plus, mapping = aes(x = length, y = scalelength, color = lakeid)) +
+  geom_point()
