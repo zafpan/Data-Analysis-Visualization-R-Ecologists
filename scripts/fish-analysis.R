@@ -21,7 +21,3 @@ library(tidyverse)
 # and the size of its scale across the different lakes sampled in these data
 ggplot(data = fish_data_lgth_1mm_plus, mapping = aes(x = length, y = scalelength, color = lakeid)) +
   geom_point()
-
-# Plot histogram of scale length by categorical size
-ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
-  geom_histogram()
