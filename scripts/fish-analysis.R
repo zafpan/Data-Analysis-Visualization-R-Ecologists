@@ -4,7 +4,7 @@ use_git_config(user.name = "zafpano", user.email = "pzaf@ymail.com")
 
 # Read in data to new R script
 library(dplyr)
-fish_data <- read.csv("data_raw/Gaeta_etal_CLC_data.csv")
+fish_data <- read.csv("data_raw/Gaeta_etal_CLC_data_1.csv")
 
 # Create new categorical size column
 fish_data_cat <- fish_data %>% 
