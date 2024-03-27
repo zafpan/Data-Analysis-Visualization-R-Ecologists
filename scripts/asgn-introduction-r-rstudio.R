@@ -31,13 +31,6 @@ biomass <- grams * number
 biomass_kg <- biomass / 1000
 biomass_kg
 
-# better variable naming
-mass_grams_each <- 250
-total_indiv <- 3
-biomass <- mass_grams_each * total_indiv
-biomass_kg <- biomass / 1000
-biomass_kg
-
 
 # Exercise 4
 
@@ -112,5 +105,12 @@ volume[(volume_length-4):volume_length] # last 5 (no matter the length of vector
 volume[-(1:(volume_length-5))] # last 5 (no matter the length of vector)
 
 
+# Exercise 9
 
+# better variable naming
+mass_grams_each <- 250
+total_indiv <- 3
+biomass <- mass_grams_each * total_indiv
+biomass_kg <- biomass / 1000
+biomass_kg
 
